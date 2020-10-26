@@ -1,0 +1,15 @@
+.header{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+
+    &__sidenav{
+        flex: 0 0 280px;
+        background-color: #061238;
+    }
+
+    &__introduction{
+        border: 2px solid black;
+        flex: 1;
+    }
+}

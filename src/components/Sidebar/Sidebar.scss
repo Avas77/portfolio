@@ -1,0 +1,9 @@
+.Sidebar{
+    position: fixed;
+    background-color: #1D2733;
+    
+    &__list-items{
+        display: flex;
+        flex-direction: column;
+    }
+}
