@@ -1,9 +1,42 @@
 .Sidebar{
-    position: fixed;
-    background-color: #1D2733;
+    padding: 10px 0;
+}
+
+.author{
+    text-align: center;
+    margin-bottom: 15px;
+
+    &__image{
+        width: 150px;
+        height: 150px;
+        border-radius: 100px;
+    }
+}
+
+.icons{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
     
+    &__icon{
+        color: #fff !important;
+        opacity: 0.8 !important;
+    }
+}
+
+.Links{
+    &__list{
+        list-style: none;
+    }
+
     &__list-items{
         display: flex;
         flex-direction: column;
+    }
+
+    &__item{
+        text-decoration: none;
+        color: #fff;
     }
 }
