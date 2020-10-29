@@ -1,10 +1,14 @@
 .Sidebar{
     padding: 10px 0;
+    flex: 0.3;
+    background-image: linear-gradient(to right bottom, #1339b3, #061238);
+    position: sticky;
 }
 
 .author{
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    
 
     &__image{
         width: 150px;
@@ -35,8 +39,26 @@
         flex-direction: column;
     }
 
-    &__item{
+    &__item:link, &__item:visited{
         text-decoration: none;
         color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 10px 15px;
     }
+
+    &__item:hover{
+        background-color: #091c57;
+    }
+
+    &__icon{
+        margin-right: 30px;
+    }
+}
+
+.legal{
+    color: #fff;
+    font-size: 12.5px;
+    text-align: center;
+    margin-top: 20px;
 }
