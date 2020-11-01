@@ -21,21 +21,23 @@ const Sidebar = () => {
         <img src={img} alt="User Photo" className="author__image" />
       </div>
       <div className="icons">
-        <IconButton disableFocusRipple="true" href="https://github.com/Avas77">
+        <IconButton disableFocusRipple="true" href="https://github.com/Avas77" target="_blank">
           <GitHubIcon className="icons__icon" />
         </IconButton>
-        <IconButton disableFocusRipple="true" href="https://github.com/Avas77">
+        <IconButton disableFocusRipple="true" href="https://github.com/Avas77" target="_blank">
           <LinkedInIcon className="icons__icon" />
         </IconButton>
         <IconButton
           disableFocusRipple="true"
           href="https://www.instagram.com/tyavas77/"
+          target="_blank"
         >
           <InstagramIcon className="icons__icon" />
         </IconButton>
         <IconButton
           disableFocusRipple="true"
           href="https://www.facebook.com/avas.bajracharya"
+          target="_blank"
         >
           <FacebookIcon className="icons__icon" />
         </IconButton>

@@ -1,0 +1,146 @@
+.about {
+  padding: 0 25px;
+
+  &__heading {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-bottom: 2px solid black;
+    display: inline;
+    color: midnightblue;
+  }
+
+  &__description {
+    margin-top: 20px;
+    word-spacing: 1px;
+    font-weight: 500;
+    line-height: 1.8rem;
+    text-align: justify;
+    padding-right: 15px;
+    margin-bottom: 75px;
+  }
+}
+
+.link {
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0 5px;
+  color: darkblue;
+  font-weight: 900;
+  opacity: 0.8;
+}
+
+.about__goals {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.goals__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 19px;
+}
+
+.goals__items-icons {
+  width: 80px;
+  height: 37.735px;
+  background: #212529;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px;
+  align-items: center;
+  position: relative;
+}
+
+.goals__items-icons::before {
+  content: "";
+  position: absolute;
+  top: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 28.8675px solid #212529;
+}
+
+.goals__items-icons::after {
+  content: "";
+  position: absolute;
+  bottom: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 28.8675px solid #212529;
+}
+
+.goals__icons {
+  color: #fff !important;
+  font-size: 3rem !important;
+}
+
+.goals__text{
+  margin-top: 30px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.goals__subtext{
+  text-align: center;
+  opacity: 0.7;
+  line-height: 1.8em;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.details{
+  &__items{
+    display: flex !important;
+  }
+
+  &__icon-box{
+    border: 2px solid black;
+    border-radius: 100px;
+    background-color: #212529;
+    opacity: 0.8; 
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+
+    &:hover{
+      opacity: 1;
+    }
+  }
+
+  &__icon{
+    color: #fff !important;
+    font-size: 1.4rem !important;
+  }
+
+  &__text{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.text__main{
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.text__secondary{
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.small{
+  line-height: 1.4rem;
+  font-size: 0.8rem;
+}

@@ -1,8 +1,9 @@
 .Sidebar{
     padding: 10px 0;
-    flex: 0.3;
+    position: fixed;
     background-image: linear-gradient(to right bottom, #1339b3, #061238);
-    position: sticky;
+    width: 280px;
+    height: 100%;
 }
 
 .author{
@@ -60,5 +61,5 @@
     color: #fff;
     font-size: 12.5px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 25px;
 }
