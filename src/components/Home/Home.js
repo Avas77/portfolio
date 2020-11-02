@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.scss";
 import program from "../../assets/programmer.png";
 import About from '../About/About';
+import Projects from '../Projects/Projects';
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       </h1>
       </header>
       <About />
+      <Projects />
     </div>
   );
 };

@@ -10,6 +10,8 @@ import TodayIcon from "@material-ui/icons/Today";
 import RoomIcon from "@material-ui/icons/Room";
 import BlurOnIcon from "@material-ui/icons/BlurOn";
 import LanguageIcon from "@material-ui/icons/Language";
+import Button from "@material-ui/core/Button";
+import VisibilityIcon from "@material-ui/icons/Visibility";
 
 const About = () => {
   return (
@@ -139,7 +141,7 @@ const About = () => {
             <div className="details__text">
               <span className="text__main">Languages</span>
               <span className="text__secondary small">
-                Newari(Native), Nepali(Native), English(Professional), 
+                Newari(Native), Nepali(Native), English(Professional),
                 Japanese(Beginner)
               </span>
             </div>
@@ -147,6 +149,12 @@ const About = () => {
           <Grid item xs={2} />
         </Grid>
       </Grid>
+      <div className="about__btn">
+        <Button variant="outlined" color="primary" className="btn__resume">
+          <VisibilityIcon  className = "btn__icon" /> 
+          <span>See my resume</span>
+        </Button>
+      </div>
     </section>
   );
 };

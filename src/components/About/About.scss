@@ -1,5 +1,6 @@
 .about {
   padding: 0 25px;
+  margin-bottom: 150px;
 
   &__heading {
     font-size: 2.5rem;
@@ -19,6 +20,25 @@
     padding-right: 15px;
     margin-bottom: 75px;
   }
+
+  &__goals {
+    display: flex;
+    margin-bottom: 50px;
+  }
+  
+  &__btn{
+    margin-top: 50px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.btn__icon{
+  margin-right: 10px !important;
+}
+
+.btn__resume{
+  font-weight: 500 !important;
 }
 
 .link {
@@ -29,11 +49,6 @@
   color: darkblue;
   font-weight: 900;
   opacity: 0.8;
-}
-
-.about__goals {
-  display: flex;
-  margin-bottom: 50px;
 }
 
 .goals__items {
@@ -87,6 +102,10 @@
   margin-top: 30px;
   font-size: 1.5rem;
   font-weight: 500;
+
+  @media only screen and (max-width: 1300px) {
+    font-size: 1.4rem;
+  }
 }
 
 .goals__subtext{
@@ -95,6 +114,10 @@
   line-height: 1.8em;
   font-size: 1rem;
   font-weight: 400;
+
+  @media only screen and (max-width: 1300px) {
+    font-size: 0.9rem;
+  }
 }
 
 .details{

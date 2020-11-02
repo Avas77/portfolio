@@ -22,9 +22,13 @@
         font-size: 3rem;
         font-weight: 900;
 
+        @media only screen and (max-width: 1300px){
+            font-size: 2.7rem;
+        }
+
         & span{
             color: #E31C6E;
-        }
+        }        
     }
 }
 
