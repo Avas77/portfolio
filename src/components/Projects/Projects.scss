@@ -30,7 +30,10 @@
         & span{
             border-radius: 100px;
             background-color: silver;
-            padding: 10px 15px;
+            padding: 10px 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 
@@ -45,10 +48,12 @@
 
 .extra{
     background-color: #6574C4 !important;
+    color: #fff;
 }
 
 .keys{
     font-weight: 900;
+    font-size: 1.1rem;
 }
 
 .txt{
