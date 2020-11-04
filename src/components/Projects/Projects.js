@@ -12,6 +12,8 @@ import Grid from "@material-ui/core/Grid";
 import covid from "../../assets/covid.png";
 import burger from '../../assets/burger.png';
 import weather from '../../assets/weather.png';
+import tictac from '../../assets/tictac.jpg';
+import story from '../../assets/story.png';
 
 const Projects = () => {
   return (
@@ -19,7 +21,7 @@ const Projects = () => {
       <h1 className="projects__heading">Projects</h1>
       <Grid container spacing={2} className="projects__cards">
         <Grid item xs={4}>
-          <Card>
+          <Card className = "cards__shadow">
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -28,7 +30,7 @@ const Projects = () => {
                 image={covid}
                 title="Fight Covid app"
               />
-              <CardContent>
+              <CardContent className = "contentarea">
                 <Typography gutterBottom variant="h5" component="h2">
                   Fight Covid
                 </Typography>
@@ -50,11 +52,13 @@ const Projects = () => {
               </CardContent>
             </CardActionArea>
             <CardActions className="projects__btn">
-              <Button size="small" color="primary">
+              <Button size="small" color="primary" 
+              href="https://github.com/robina-bajracharya/fight-covid" target="_blank">
                 <span className="txt">Source Code</span>
                 <span className="keys">&lt; &gt;</span>
               </Button>
-              <Button size="small" color="primary">
+              <Button size="small" color="primary" 
+              href="https://fightcovid-91c55.web.app/" target="_blank">
                 <span className="txt">Live Demo</span>
                 <span className="keys">&#8599;</span>
               </Button>
@@ -63,7 +67,7 @@ const Projects = () => {
         </Grid>
 
         <Grid item xs={4}>
-          <Card>
+          <Card className = "cards__shadow">
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -72,7 +76,7 @@ const Projects = () => {
                 image={burger}
                 title="Burger Builder app"
               />
-              <CardContent>
+              <CardContent className = "contentarea">
                 <Typography gutterBottom variant="h5" component="h2">
                   Burger Builder
                 </Typography>
@@ -94,11 +98,13 @@ const Projects = () => {
               </CardContent>
             </CardActionArea>
             <CardActions className="projects__btn">
-              <Button size="small" color="primary">
+              <Button size="small" color="primary"
+              href="https://github.com/Avas77/example" target="_blank">
                 <span className="txt">Source Code</span>
                 <span className="keys">&lt; &gt;</span>
               </Button>
-              <Button size="small" color="primary">
+              <Button size="small" color="primary"
+              href="https://burger-builder-32682.web.app/" target="_blank">
                 <span className="txt">Live Demo</span>
                 <span className="keys">&#8599;</span>
               </Button>
@@ -107,7 +113,7 @@ const Projects = () => {
         </Grid>
 
         <Grid item xs={4}>
-          <Card>
+          <Card className = "cards__shadow">
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -116,7 +122,7 @@ const Projects = () => {
                 image={weather}
                 title="Weather Finder app"
               />
-              <CardContent>
+              <CardContent className = "contentarea">
                 <Typography gutterBottom variant="h5" component="h2">
                   Weather Finder
                 </Typography>
@@ -126,23 +132,25 @@ const Projects = () => {
                   component="p"
                   className="projects__cards-desc"
                 >
-                  Web Application that raises awareness about the current global
-                  pandemic. It records number of deaths, infected and recovered
-                  people around the world. It has google maps functionality.
+                  Simple web app thats shows the weather realted data of different 
+                  cities around the world. It has dynamic background wallpaper i.e,
+                  It changes according to the weather of the city.
                 </Typography>
                 <div className="projects__cards-tools">
                   <span>React.Js</span>
-                  <span className="extra">Materialize CSS</span>
+                  <span className="extra">Firebase</span>
                   <span>Github</span>
                 </div>
               </CardContent>
             </CardActionArea>
             <CardActions className="projects__btn">
-              <Button size="small" color="primary">
+              <Button size="small" color="primary"
+              href="https://github.com/Avas77/weatherfinder" target="_blank">
                 <span className="txt">Source Code</span>
                 <span className="keys">&lt; &gt;</span>
               </Button>
-              <Button size="small" color="primary">
+              <Button size="small" color="primary"
+              href="https://weatherfinder-73a44.web.app/" target="_blank">
                 <span className="txt">Live Demo</span>
                 <span className="keys">&#8599;</span>
               </Button>
@@ -150,7 +158,7 @@ const Projects = () => {
           </Card>
         </Grid>
 
-        <Grid item xs={4}>
+        <Grid item xs={4} className = "cards__shadow">
           <Card>
             <CardActionArea>
               <CardMedia
@@ -160,7 +168,7 @@ const Projects = () => {
                 image={covid}
                 title="Contemplative Reptile"
               />
-              <CardContent>
+              <CardContent className = "contentarea">
                 <Typography gutterBottom variant="h5" component="h2">
                   Fight Covid
                 </Typography>
@@ -194,19 +202,19 @@ const Projects = () => {
           </Card>
         </Grid>
 
-        <Grid item xs={4}>
+        <Grid item xs={4} className = "cards__shadow">
           <Card>
             <CardActionArea>
               <CardMedia
                 component="img"
-                alt="Contemplative Reptile"
+                alt="Tic Tac Toe game redefined"
                 height="350"
-                image={covid}
-                title="Contemplative Reptile"
+                image={tictac}
+                title="Tic Tac Toe app"
               />
-              <CardContent>
+              <CardContent className = "contentarea">
                 <Typography gutterBottom variant="h5" component="h2">
-                  Fight Covid
+                  Tic Tac Toe
                 </Typography>
                 <Typography
                   variant="body2"
@@ -214,9 +222,9 @@ const Projects = () => {
                   component="p"
                   className="projects__cards-desc"
                 >
-                  Web Application that raises awareness about the current global
-                  pandemic. It records number of deaths, infected and recovered
-                  people around the world. It has google maps functionality.
+                 Simple Tic Tac Toe game app to play with your friends or family.
+                 It is a two player game with attractive UI. It is hosted online
+                 using netlify 
                 </Typography>
                 <div className="projects__cards-tools">
                   <span>React.Js</span>
@@ -226,7 +234,8 @@ const Projects = () => {
               </CardContent>
             </CardActionArea>
             <CardActions className="projects__btn">
-              <Button size="small" color="primary">
+              <Button size="small" color="primary"
+              href="https://github.com/Avas77/Tic-Tac-Toe" target="_blank">
                 <span className="txt">Source Code</span>
                 <span className="keys">&lt; &gt;</span>
               </Button>
@@ -239,18 +248,18 @@ const Projects = () => {
         </Grid>
 
         <Grid item xs={4}>
-          <Card>
+          <Card className = "cards__shadow">
             <CardActionArea>
               <CardMedia
                 component="img"
-                alt="Contemplative Reptile"
+                alt="Write short stories impress others"
                 height="350"
-                image={covid}
-                title="Contemplative Reptile"
+                image={story}
+                title="Short Stories Blog"
               />
-              <CardContent>
+              <CardContent className = "contentarea">
                 <Typography gutterBottom variant="h5" component="h2">
-                  Fight Covid
+                  Short Stories Blog 
                 </Typography>
                 <Typography
                   variant="body2"
@@ -258,9 +267,9 @@ const Projects = () => {
                   component="p"
                   className="projects__cards-desc"
                 >
-                  Web Application that raises awareness about the current global
-                  pandemic. It records number of deaths, infected and recovered
-                  people around the world. It has google maps functionality.
+                  This web app allows users to write short stories and share them 
+                  with others. It has login and signup features. It also provides
+                  exciting challenges for writing short stories.
                 </Typography>
                 <div className="projects__cards-tools">
                   <span>React.Js</span>
@@ -270,7 +279,8 @@ const Projects = () => {
               </CardContent>
             </CardActionArea>
             <CardActions className="projects__btn">
-              <Button size="small" color="primary">
+              <Button size="small" color="primary"
+              href="https://github.com/Avas77/Short-Stories-Blog" target="_blank">
                 <span className="txt">Source Code</span>
                 <span className="keys">&lt; &gt;</span>
               </Button>

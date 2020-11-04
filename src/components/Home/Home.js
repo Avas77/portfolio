@@ -8,11 +8,11 @@ const Home = () => {
   return (
     <div className="content">
       <header className="home">
-      <img src={program} alt="" className="home__image" />
-      <h1 className="home__text">
-        Hello, I'm <span>Avas Bajracharya.</span> Nice to Meet You. <br></br>I'm a
-        Front-End Developer.
-      </h1>
+        <img src={program} alt="" className="home__image" />
+        <h1 className="home__text">
+          Hello, I'm <span>Avas Bajracharya.</span> Nice to Meet You. <br></br>I'm a
+          Front-End Developer.
+        </h1>
       </header>
       <About />
       <Projects />
