@@ -22,6 +22,15 @@
         font-size: 3rem;
         font-weight: 900;
 
+        &-primary{
+            animation: moveTop 1s ease-out;
+        }
+
+        &-secondary{
+            animation: moveSlowTop .5s ease-out .75s;
+            animation-fill-mode: backwards;
+        }
+
         @media only screen and (max-width: 1300px){
             font-size: 2.7rem;
         }
@@ -36,3 +45,26 @@
     display: none;
 }
 
+@keyframes moveTop{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveSlowTop{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
