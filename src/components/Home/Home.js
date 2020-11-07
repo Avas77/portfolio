@@ -4,6 +4,8 @@ import program from "../../assets/programmer.png";
 import About from "../About/About";
 import Projects from "../Projects/Projects";
 import Experience from '../Experience/Experience';
+import Skills from '../Skills/Skills';
+import Academic from '../Academic/Academic';
 
 const Home = () => {
   return (
@@ -20,6 +22,8 @@ const Home = () => {
       <About />
       <Projects />
       <Experience />
+      <Skills />
+      <Academic />
     </div>
   );
 };

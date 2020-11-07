@@ -17,4 +17,43 @@
         font-weight: 900;
         font-size: 1.4rem;
     }
+
+    &__content{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}
+
+.MuiTimelineItem-missingOppositeContent:before{
+    flex: 0 !important;
+    padding: 0 !important;
+}
+
+.MuiTimelineConnector-root{
+    background-color: midnightblue !important;
+}
+
+.timeline__txt{
+    font-weight: 900 !important;
+}
+
+.timeline__subtext{
+    margin-top: 20px !important;
+    opacity: 0.9 !important;
+}
+
+.timeline__btn{
+    margin-top: 15px !important;
+    text-transform: uppercase !important;
+    display: inline-block;
+    width: 40%;
+
+    & span{
+        font-weight: 500 !important;
+    }
+}
+
+.achievements{
+    line-height: 2rem;
+    opacity: 0.9;
 }

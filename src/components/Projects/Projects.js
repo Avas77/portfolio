@@ -14,6 +14,7 @@ import burger from "../../assets/burger.png";
 import weather from "../../assets/weather.png";
 import tictac from "../../assets/tictac.jpg";
 import story from "../../assets/story.png";
+import trillo from '../../assets/trillo.png';
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 
 const theme = createMuiTheme({
@@ -208,14 +209,14 @@ const Projects = () => {
               <CardActionArea>
                 <CardMedia
                   component="img"
-                  alt="Contemplative Reptile"
+                  alt="Hotel Info Website"
                   height="350"
-                  image={covid}
-                  title="Contemplative Reptile"
+                  image={trillo}
+                  title="Hotel Info site"
                 />
                 <CardContent className="contentarea">
                   <Typography gutterBottom variant="h5" component="h2">
-                    Fight Covid
+                    Hotel Info Design
                   </Typography>
                   <Typography
                     variant="body2"
@@ -223,20 +224,20 @@ const Projects = () => {
                     component="p"
                     className="projects__cards-desc"
                   >
-                    Web Application that raises awareness about the current
-                    global pandemic. It records number of deaths, infected and
-                    recovered people around the world. It has google maps
-                    functionality.
+                    This is a simple design page which displays information about a
+                    certain hotel. This project can be seen as a practice project
+                    for my Flexbox and Sass CSS skills. 
                   </Typography>
                   <div className="projects__cards-tools">
                     <span>React.Js</span>
-                    <span className="extra">Materialize CSS</span>
+                    <span className="extra">Sass</span>
                     <span>Github</span>
                   </div>
                 </CardContent>
               </CardActionArea>
               <CardActions className="projects__btn">
-                <Button size="small" color="primary">
+                <Button size="small" color="primary" 
+                href="https://github.com/Avas77/Trillo" target="_blank">
                   <span className="txt">Source Code</span>
                   <span className="keys">&lt; &gt;</span>
                 </Button>
