@@ -3,14 +3,14 @@ import "./Home.scss";
 import program from "../../assets/programmer.png";
 import About from "../About/About";
 import Projects from "../Projects/Projects";
-import Experience from '../Experience/Experience';
-import Skills from '../Skills/Skills';
-import Academic from '../Academic/Academic';
-import Contact from '../Contact/Contact';
+import Experience from "../Experience/Experience";
+import Skills from "../Skills/Skills";
+import Academic from "../Academic/Academic";
+import Contact from "../Contact/Contact";
 
 const Home = () => {
   return (
-    <div className="content">
+    <div className="content" id="home">
       <header className="home">
         <img src={program} alt="" className="home__image" />
         <div className="home__text">

@@ -21,10 +21,18 @@ const Sidebar = () => {
         <img src={img} alt="User Photo" className="author__image" />
       </div>
       <div className="icons">
-        <IconButton disableFocusRipple="true" href="https://github.com/Avas77" target="_blank">
+        <IconButton
+          disableFocusRipple="true"
+          href="https://github.com/Avas77"
+          target="_blank"
+        >
           <GitHubIcon className="icons__icon" />
         </IconButton>
-        <IconButton disableFocusRipple="true" href="https://github.com/Avas77" target="_blank">
+        <IconButton
+          disableFocusRipple="true"
+          href="https://github.com/Avas77"
+          target="_blank"
+        >
           <LinkedInIcon className="icons__icon" />
         </IconButton>
         <IconButton
@@ -45,32 +53,32 @@ const Sidebar = () => {
       <nav className="Links">
         <ul className="Links__list">
           <li className="Links__list-items">
-            <a href="" className="Links__item">
-              <HomeIcon className = "Links__icon" />
+            <a href="#home" className="Links__item">
+              <HomeIcon className="Links__icon" />
               <span>Home</span>
             </a>
-            <a href="" className="Links__item">
-              <AccountCircleIcon className = "Links__icon"/>
+            <a href="#about" className="Links__item">
+              <AccountCircleIcon className="Links__icon" />
               <span>About</span>
             </a>
-            <a href="" className="Links__item">
-              <AccountTreeIcon className = "Links__icon"/>
+            <a href="#projects" className="Links__item">
+              <AccountTreeIcon className="Links__icon" />
               <span>Projects</span>
             </a>
-            <a href="" className="Links__item">
-              <ExploreIcon className = "Links__icon"/>
+            <a href="#experience" className="Links__item">
+              <ExploreIcon className="Links__icon" />
               <span>Experience</span>
             </a>
-            <a href="" className="Links__item">
-              <DoubleArrowIcon className = "Links__icon"/>
+            <a href="#skills" className="Links__item">
+              <DoubleArrowIcon className="Links__icon" />
               <span>Skills</span>
             </a>
-            <a href="" className="Links__item">
-              <TimelineIcon className = "Links__icon"/>
+            <a href="#academic" className="Links__item">
+              <TimelineIcon className="Links__icon" />
               <span>Academics</span>
             </a>
-            <a href="" className="Links__item">
-              <ContactsIcon className = "Links__icon"/>
+            <a href="#contact" className="Links__item">
+              <ContactsIcon className="Links__icon" />
               <span>Contact</span>
             </a>
           </li>

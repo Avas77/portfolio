@@ -14,7 +14,7 @@ import AllInclusiveIcon from "@material-ui/icons/AllInclusive";
 
 const Academic = () => {
   return (
-    <div className="academic">
+    <div className="academic" id="academic">
       <h1 className="academic__heading">Academic Timeline</h1>
       <Timeline align="alternate" className="academic__timeline">
         <TimelineItem>

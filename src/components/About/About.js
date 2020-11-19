@@ -15,7 +15,7 @@ import VisibilityIcon from "@material-ui/icons/Visibility";
 
 const About = () => {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <h1 className="about__heading">About</h1>
       <p className="about__description">
         I am currently in my final year studying
@@ -151,7 +151,7 @@ const About = () => {
       </Grid>
       <div className="about__btn">
         <Button variant="outlined" color="primary" className="btn__resume">
-          <VisibilityIcon  className = "btn__icon" /> 
+          <VisibilityIcon className="btn__icon" />
           <span>See my resume</span>
         </Button>
       </div>

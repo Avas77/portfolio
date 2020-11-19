@@ -14,7 +14,7 @@ import burger from "../../assets/burger.png";
 import weather from "../../assets/weather.png";
 import tictac from "../../assets/tictac.jpg";
 import story from "../../assets/story.png";
-import trillo from '../../assets/trillo.png';
+import trillo from "../../assets/trillo.png";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 
 const theme = createMuiTheme({
@@ -29,7 +29,7 @@ const theme = createMuiTheme({
 
 const Projects = () => {
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <h1 className="projects__heading">Projects</h1>
       <Grid container spacing={2} className="projects__cards">
         <Grid item xs={4}>
@@ -224,9 +224,9 @@ const Projects = () => {
                     component="p"
                     className="projects__cards-desc"
                   >
-                    This is a simple design page which displays information about a
-                    certain hotel. This project can be seen as a practice project
-                    for my Flexbox and Sass CSS skills. 
+                    This is a simple design page which displays information
+                    about a certain hotel. This project can be seen as a
+                    practice project for my Flexbox and Sass CSS skills.
                   </Typography>
                   <div className="projects__cards-tools">
                     <span>React.Js</span>
@@ -236,8 +236,12 @@ const Projects = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions className="projects__btn">
-                <Button size="small" color="primary" 
-                href="https://github.com/Avas77/Trillo" target="_blank">
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://github.com/Avas77/Trillo"
+                  target="_blank"
+                >
                   <span className="txt">Source Code</span>
                   <span className="keys">&lt; &gt;</span>
                 </Button>

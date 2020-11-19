@@ -11,7 +11,7 @@ import Button from "@material-ui/core/Button";
 
 const Experience = () => {
   return (
-    <div className="experience">
+    <div className="experience" id="experience">
       <h1 className="experience__heading">Experience</h1>
       <Grid container>
         <Grid item xs={6}>
@@ -29,7 +29,11 @@ const Experience = () => {
                 <span className="timeline__subtext">
                   Worked on basic Image Digitization and Data Entry.
                 </span>
-                <Button variant="outlined" color="primary" className="timeline__btn">
+                <Button
+                  variant="outlined"
+                  color="primary"
+                  className="timeline__btn"
+                >
                   <span>See my resume</span>
                 </Button>
               </TimelineContent>
@@ -44,7 +48,7 @@ const Experience = () => {
                 <TimelineDot variant="outlined" color="primary" />
                 <TimelineConnector color="primary" />
               </TimelineSeparator>
-              <TimelineContent className = "achievements">
+              <TimelineContent className="achievements">
                 Runner up, NCCS Hackathon, Sept 2020<br></br>
                 Participant, NCCS Hackathon, May 2019<br></br>
                 One Day Workshop on MERN, Jan 2019<br></br>
