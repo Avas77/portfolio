@@ -203,9 +203,9 @@ const Projects = () => {
           </ThemeProvider>
         </Grid>
 
-        <Grid item xs={4} className="cards__shadow">
+        <Grid item xs={4}>
           <ThemeProvider theme={theme}>
-            <Card>
+            <Card className="cards__shadow">
               <CardActionArea>
                 <CardMedia
                   component="img"
@@ -254,9 +254,9 @@ const Projects = () => {
           </ThemeProvider>
         </Grid>
 
-        <Grid item xs={4} className="cards__shadow">
+        <Grid item xs={4}>
           <ThemeProvider theme={theme}>
-            <Card>
+            <Card className="cards__shadow">
               <CardActionArea>
                 <CardMedia
                   component="img"

@@ -82,10 +82,10 @@ const Contact = () => {
         </Grid>
       </Grid>
       <div className="contact__info">
-        <div className="contact__infobox">
+        <a className="contact__infobox" href="tel: 9803190991">
           <SmartphoneIcon className="contact__icon" />
           <span>9803190991</span>
-        </div>
+        </a>
         <div className="contact__infobox">
           <EmailIcon className="contact__icon" />
           <span>avasbajracharya9@gmail.com</span>

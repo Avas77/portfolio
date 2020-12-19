@@ -1,70 +1,69 @@
-.content{
-    width: 100%;
-    margin-left: 280px;
+.content {
+  width: 100%;
+  margin-left: 280px;
 }
 
+.home {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 150px;
 
-.home{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 150px;
+  &__image {
+    width: 75%;
+    height: 70%;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    &__image{
-        width: 75%;
-        height: 70%;
-        margin-top: 0;
-        margin-left: auto;
-        margin-right: auto;
+  &__text {
+    text-align: center;
+    font-size: 2.9rem;
+    font-weight: 900;
+
+    &-primary {
+      animation: moveTop 1s ease-out;
     }
 
-    &__text{
-        text-align: center;
-        font-size: 3rem;
-        font-weight: 900;
-
-        &-primary{
-            animation: moveTop 1s ease-out;
-        }
-
-        &-secondary{
-            animation: moveSlowTop .5s ease-out .75s;
-            animation-fill-mode: backwards;
-        }
-
-        @media only screen and (max-width: 1300px){
-            font-size: 2.7rem;
-        }
-
-        & span{
-            color: #E31C6E;
-        }        
+    &-secondary {
+      animation: moveSlowTop 0.5s ease-out 0.75s;
+      animation-fill-mode: backwards;
     }
+
+    @media only screen and (max-width: 1300px) {
+      font-size: 2.7rem;
+    }
+
+    & span {
+      color: #e31c6e;
+    }
+  }
 }
 
 .content::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
-@keyframes moveTop{
-    0%{
-        opacity: 0;
-        transform: translateY(100px);
-    }
+@keyframes moveTop {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
 
-    100%{
-        opacity: 1;
-        transform: translate(0);
-    }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
-@keyframes moveSlowTop{
-    0%{
-        opacity: 0;
-        transform: translateY(50px);
-    }
+@keyframes moveSlowTop {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
 
-    100%{
-        opacity: 1;
-        transform: translate(0);
-    }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }

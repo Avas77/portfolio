@@ -1,6 +1,26 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+#snowflakeContainer {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: none;
+  z-index: -1;
+}
+
+.snowflake {
+  position: fixed;
+  background-color: #d90429;
+  user-select: none;
+  z-index: 1000;
+  pointer-events: none;
+
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
 }
