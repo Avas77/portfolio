@@ -1,5 +1,4 @@
 .about {
-  padding: 0 25px;
   margin-bottom: 150px;
 
   &__heading {
@@ -9,6 +8,7 @@
     border-bottom: 2px solid black;
     display: inline;
     color: midnightblue;
+    margin-left: 25px;
   }
 
   &__description {
@@ -19,25 +19,29 @@
     text-align: justify;
     padding-right: 15px;
     margin-bottom: 75px;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   &__goals {
     display: flex;
     margin-bottom: 50px;
+    margin-left: 25px;
   }
-  
-  &__btn{
+
+  &__btn {
     margin-top: 50px;
     text-transform: uppercase;
     text-align: center;
   }
 }
 
-.btn__icon{
+.btn__icon {
   margin-right: 10px !important;
 }
 
-.btn__resume{
+.btn__resume {
   font-weight: 500 !important;
 }
 
@@ -98,7 +102,7 @@
   font-size: 3rem !important;
 }
 
-.goals__text{
+.goals__text {
   margin-top: 30px;
   font-size: 1.5rem;
   font-weight: 500;
@@ -108,7 +112,7 @@
   }
 }
 
-.goals__subtext{
+.goals__subtext {
   text-align: center;
   opacity: 0.7;
   line-height: 1.8em;
@@ -120,16 +124,16 @@
   }
 }
 
-.details{
-  &__items{
+.details {
+  &__items {
     display: flex !important;
   }
 
-  &__icon-box{
+  &__icon-box {
     border: 2px solid black;
     border-radius: 100px;
     background-color: #212529;
-    opacity: 0.8; 
+    opacity: 0.8;
     width: 40px;
     height: 40px;
     display: flex;
@@ -137,33 +141,33 @@
     align-items: center;
     margin-right: 15px;
 
-    &:hover{
+    &:hover {
       opacity: 1;
     }
   }
 
-  &__icon{
+  &__icon {
     color: #fff !important;
     font-size: 1.4rem !important;
   }
 
-  &__text{
+  &__text {
     display: flex;
     flex-direction: column;
   }
 }
 
-.text__main{
+.text__main {
   font-weight: 400;
   font-size: 1rem;
 }
 
-.text__secondary{
+.text__secondary {
   font-size: 0.9rem;
   opacity: 0.8;
 }
 
-.small{
+.small {
   line-height: 1.4rem;
   font-size: 0.8rem;
 }

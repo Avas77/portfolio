@@ -12,6 +12,7 @@ import BlurOnIcon from "@material-ui/icons/BlurOn";
 import LanguageIcon from "@material-ui/icons/Language";
 import Button from "@material-ui/core/Button";
 import VisibilityIcon from "@material-ui/icons/Visibility";
+import Container from "@material-ui/core/Container";
 
 const About = () => {
   return (
@@ -83,72 +84,69 @@ const About = () => {
           </p>
         </div>
       </div>
-      <Grid className="details" container spacing={4}>
-        <Grid item xs={12} container>
-          <Grid item xs={2} />
-          <Grid item xs={4} className="details__items">
-            <div className="details__icon-box">
-              <SchoolIcon className="details__icon" />
-            </div>
-            <div className="details__text">
-              <span className="text__main">Degree</span>
-              <span className="text__secondary">BSc. CSIT</span>
-            </div>
+
+      <Container maxWidth="md">
+        <Grid className="details" container spacing={4}>
+          <Grid item xs={12} container justify="center">
+            <Grid item xs={4} className="details__items">
+              <div className="details__icon-box">
+                <SchoolIcon className="details__icon" />
+              </div>
+              <div className="details__text">
+                <span className="text__main">Degree</span>
+                <span className="text__secondary">BSc. CSIT</span>
+              </div>
+            </Grid>
+            <Grid item xs={4} className="details__items">
+              <div className="details__icon-box">
+                <TodayIcon className="details__icon" />
+              </div>
+              <div className="details__text">
+                <span className="text__main">Age</span>
+                <span className="text__secondary">22</span>
+              </div>
+            </Grid>
           </Grid>
-          <Grid item xs={4} className="details__items">
-            <div className="details__icon-box">
-              <TodayIcon className="details__icon" />
-            </div>
-            <div className="details__text">
-              <span className="text__main">Age</span>
-              <span className="text__secondary">22</span>
-            </div>
+          <Grid item xs={12} container justify="center">
+            <Grid item xs={4} className="details__items">
+              <div className="details__icon-box">
+                <RoomIcon className="details__icon" />
+              </div>
+              <div className="details__text">
+                <span className="text__main">Place</span>
+                <span className="text__secondary">
+                  Banasthali, Kathmandu, Nepal
+                </span>
+              </div>
+            </Grid>
+            <Grid item xs={4} className="details__items">
+              <div className="details__icon-box">
+                <BlurOnIcon className="details__icon" />
+              </div>
+              <div className="details__text">
+                <span className="text__main">Interests</span>
+                <span className="text__secondary">
+                  Coding, Travelling, Music, Sports
+                </span>
+              </div>
+            </Grid>
           </Grid>
-          <Grid item xs={2} />
+          <Grid item xs={12} container justify="center">
+            <Grid item xs={8} className="details__items">
+              <div className="details__icon-box">
+                <LanguageIcon className="details__icon" />
+              </div>
+              <div className="details__text">
+                <span className="text__main">Languages</span>
+                <span className="text__secondary small">
+                  Newari(Native), Nepali(Native), English(Professional),
+                  Japanese(Beginner)
+                </span>
+              </div>
+            </Grid>
+          </Grid>
         </Grid>
-        <Grid item xs={12} container>
-          <Grid item xs={2} />
-          <Grid item xs={4} className="details__items">
-            <div className="details__icon-box">
-              <RoomIcon className="details__icon" />
-            </div>
-            <div className="details__text">
-              <span className="text__main">Place</span>
-              <span className="text__secondary">
-                Banasthali, Kathmandu, Nepal
-              </span>
-            </div>
-          </Grid>
-          <Grid item xs={4} className="details__items">
-            <div className="details__icon-box">
-              <BlurOnIcon className="details__icon" />
-            </div>
-            <div className="details__text">
-              <span className="text__main">Interests</span>
-              <span className="text__secondary">
-                Coding, Travelling, Music, Sports
-              </span>
-            </div>
-          </Grid>
-          <Grid item xs={2} />
-        </Grid>
-        <Grid item xs={12} container>
-          <Grid item xs={2} />
-          <Grid item xs={8} className="details__items">
-            <div className="details__icon-box">
-              <LanguageIcon className="details__icon" />
-            </div>
-            <div className="details__text">
-              <span className="text__main">Languages</span>
-              <span className="text__secondary small">
-                Newari(Native), Nepali(Native), English(Professional),
-                Japanese(Beginner)
-              </span>
-            </div>
-          </Grid>
-          <Grid item xs={2} />
-        </Grid>
-      </Grid>
+      </Container>
       <div className="about__btn">
         <Button variant="outlined" color="primary" className="btn__resume">
           <VisibilityIcon className="btn__icon" />
