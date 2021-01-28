@@ -1,65 +1,77 @@
-.Sidebar{
-    padding: 10px 0;
-    position: fixed;
-    background-image: linear-gradient(to right bottom, #1339b3, #061238);
-    width: 280px;
-    height: 100%;
+.Sidebar {
+  padding: 10px 0;
+  position: fixed;
+  background-image: linear-gradient(to right bottom, #1339b3, #061238);
+  width: 280px;
+  height: 100%;
+  display: block;
+  z-index: 9999;
 }
 
-.author{
-    text-align: center;
-    margin-bottom: 10px;
-    
+.author {
+  text-align: center;
+  margin-bottom: 10px;
 
-    &__image{
-        width: 150px;
-        height: 150px;
-        border-radius: 100px;
-    }
+  &__image {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+  }
 }
 
-.icons{
+.icons {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+
+  &__icon {
+    color: #fff !important;
+    opacity: 0.8 !important;
+  }
+}
+
+.Links {
+  &__list {
+    list-style: none;
+  }
+
+  &__list-items {
     display: flex;
-    justify-content: space-around;
-    border-bottom: 1px solid black;
-    margin-bottom: 20px;
-    
-    &__icon{
-        color: #fff !important;
-        opacity: 0.8 !important;
-    }
-}
+    flex-direction: column;
+  }
 
-.Links{
-    &__list{
-        list-style: none;
-    }
-
-    &__list-items{
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__item:link, &__item:visited{
-        text-decoration: none;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        padding: 10px 15px;
-    }
-
-    &__item:hover{
-        background-color: #091c57;
-    }
-
-    &__icon{
-        margin-right: 30px;
-    }
-}
-
-.legal{
+  &__item:link,
+  &__item:visited {
+    text-decoration: none;
     color: #fff;
-    font-size: 12.5px;
-    text-align: center;
-    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+  }
+
+  &__item:hover {
+    background-color: #091c57;
+  }
+
+  &__icon {
+    margin-right: 30px;
+  }
+}
+
+.legal {
+  color: #fff;
+  font-size: 12.5px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.open {
+  display: block !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .Sidebar {
+    display: none;
+  }
 }

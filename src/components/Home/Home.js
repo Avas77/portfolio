@@ -8,9 +8,12 @@ import Skills from "../Skills/Skills";
 import Academic from "../Academic/Academic";
 import Contact from "../Contact/Contact";
 
-const Home = () => {
+const Home = (props) => {
   return (
     <div className="content" id="home">
+      <div className="toggler" onClick={props.clicked}>
+        Menu
+      </div>
       <header className="home">
         <img src={program} alt="" className="home__image" />
         <div className="home__text">

@@ -14,9 +14,9 @@ import DoubleArrowIcon from "@material-ui/icons/DoubleArrow";
 import TimelineIcon from "@material-ui/icons/Timeline";
 import ContactsIcon from "@material-ui/icons/Contacts";
 
-const Sidebar = () => {
+const Sidebar = (props) => {
   return (
-    <div className="Sidebar">
+    <div className={`Sidebar ${props.open ? "open" : ""}`}>
       <div className="author">
         <img src={img} alt="User Photo" className="author__image" />
       </div>

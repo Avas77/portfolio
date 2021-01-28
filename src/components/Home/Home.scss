@@ -3,7 +3,9 @@
   margin-left: 280px;
   overflow-x: hidden;
 }
-
+.toggler {
+  display: none;
+}
 .home {
   display: flex;
   flex-direction: column;
@@ -66,5 +68,14 @@
   100% {
     opacity: 1;
     transform: translate(0);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .content {
+    margin-left: 0;
+  }
+  .toggler {
+    display: block;
   }
 }
