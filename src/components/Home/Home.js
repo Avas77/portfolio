@@ -7,13 +7,14 @@ import Experience from "../Experience/Experience";
 import Skills from "../Skills/Skills";
 import Academic from "../Academic/Academic";
 import Contact from "../Contact/Contact";
+import menu from "../../assets/menu.svg";
 
 const Home = (props) => {
   return (
     <div className="content" id="home">
-      <div className="toggler" onClick={props.clicked}>
-        Menu
-      </div>
+      <span className="toggler" onClick={props.clicked}>
+        <img src={menu} alt="" className="menu-icon" />
+      </span>
       <header className="home">
         <img src={program} alt="" className="home__image" />
         <div className="home__text">

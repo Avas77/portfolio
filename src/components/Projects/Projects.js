@@ -34,7 +34,7 @@ const Projects = () => {
       <h1 className="projects__heading">Projects</h1>
       <Container maxWidth="lg">
         <Grid container spacing={2} className="projects__cards">
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <ThemeProvider theme={theme}>
               <Card className="cards__shadow">
                 <CardActionArea disableRipple="true">
@@ -62,7 +62,7 @@ const Projects = () => {
                     </Typography>
                     <div className="projects__cards-tools">
                       <span>React.Js</span>
-                      <span className="extra">Materialize CSS</span>
+                      <span className="extra">Material UI</span>
                       <span>Github</span>
                     </div>
                   </CardContent>
@@ -91,7 +91,7 @@ const Projects = () => {
             </ThemeProvider>
           </Grid>
 
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <ThemeProvider theme={theme}>
               <Card className="cards__shadow">
                 <CardActionArea>
@@ -148,7 +148,7 @@ const Projects = () => {
             </ThemeProvider>
           </Grid>
 
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <ThemeProvider theme={theme}>
               <Card className="cards__shadow">
                 <CardActionArea>
@@ -205,7 +205,7 @@ const Projects = () => {
             </ThemeProvider>
           </Grid>
 
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <ThemeProvider theme={theme}>
               <Card className="cards__shadow">
                 <CardActionArea>
@@ -218,7 +218,7 @@ const Projects = () => {
                   />
                   <CardContent className="contentarea">
                     <Typography gutterBottom variant="h5" component="h2">
-                      Hotel Info Design
+                    Hotel Info Design
                     </Typography>
                     <Typography
                       variant="body2"
@@ -241,13 +241,18 @@ const Projects = () => {
                   <Button
                     size="small"
                     color="primary"
-                    href="https://github.com/Avas77/Trillo"
+                    href="https://github.com/Avas77/weatherfinder"
                     target="_blank"
                   >
                     <span className="txt">Source Code</span>
                     <span className="keys">&lt; &gt;</span>
                   </Button>
-                  <Button size="small" color="primary">
+                  <Button
+                    size="small"
+                    color="primary"
+                    href="https://weatherfinder-73a44.web.app/"
+                    target="_blank"
+                  >
                     <span className="txt">Live Demo</span>
                     <span className="keys">&#8599;</span>
                   </Button>
@@ -256,7 +261,7 @@ const Projects = () => {
             </ThemeProvider>
           </Grid>
 
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <ThemeProvider theme={theme}>
               <Card className="cards__shadow">
                 <CardActionArea>
@@ -307,7 +312,7 @@ const Projects = () => {
             </ThemeProvider>
           </Grid>
 
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <ThemeProvider theme={theme}>
               <Card className="cards__shadow">
                 <CardActionArea>

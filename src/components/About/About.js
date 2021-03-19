@@ -87,8 +87,8 @@ const About = () => {
 
       <Container maxWidth="md">
         <Grid className="details" container spacing={4}>
-          <Grid item xs={12} container justify="center">
-            <Grid item xs={4} className="details__items">
+          <Grid item xs={12} container justify="center" className="first-row">
+            <Grid item xs={12} sm={4} className="details__items">
               <div className="details__icon-box">
                 <SchoolIcon className="details__icon" />
               </div>
@@ -97,7 +97,7 @@ const About = () => {
                 <span className="text__secondary">BSc. CSIT</span>
               </div>
             </Grid>
-            <Grid item xs={4} className="details__items">
+            <Grid item xs={12} sm={4} className="details__items">
               <div className="details__icon-box">
                 <TodayIcon className="details__icon" />
               </div>
@@ -107,8 +107,8 @@ const About = () => {
               </div>
             </Grid>
           </Grid>
-          <Grid item xs={12} container justify="center">
-            <Grid item xs={4} className="details__items">
+          <Grid item xs={12} container justify="center" className="second-row">
+            <Grid item xs={12} sm={4} className="details__items">
               <div className="details__icon-box">
                 <RoomIcon className="details__icon" />
               </div>
@@ -119,7 +119,7 @@ const About = () => {
                 </span>
               </div>
             </Grid>
-            <Grid item xs={4} className="details__items">
+            <Grid item xs={12} sm={4} className="details__items">
               <div className="details__icon-box">
                 <BlurOnIcon className="details__icon" />
               </div>
@@ -131,9 +131,9 @@ const About = () => {
               </div>
             </Grid>
           </Grid>
-          <Grid item xs={12} container justify="center">
-            <Grid item xs={8} className="details__items">
-              <div className="details__icon-box">
+          <Grid item xs={12} container justify="center" className="third-row">
+            <Grid item xs={12} sm={8} className="details__items">
+              <div className="details__icon-box icon-esp">
                 <LanguageIcon className="details__icon" />
               </div>
               <div className="details__text">

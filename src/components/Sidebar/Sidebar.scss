@@ -6,6 +6,7 @@
   height: 100%;
   display: block;
   z-index: 9999;
+  transition: transform 0.3s ease-out;
 }
 
 .author {
@@ -67,11 +68,13 @@
 }
 
 .open {
-  display: block !important;
+  transform: translateX(0) !important;
+  visibility: visible !important;
 }
 
 @media only screen and (max-width: 992px) {
   .Sidebar {
-    display: none;
+    transform: translateX(-100%);
+    visibility: hidden;
   }
 }

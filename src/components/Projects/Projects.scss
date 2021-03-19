@@ -17,7 +17,6 @@
   }
 
   &__cards-desc {
-    word-spacing: 0.9px !important;
     font-weight: 500 !important;
     line-height: 1.7rem !important;
     text-align: justify !important;
@@ -25,7 +24,7 @@
   }
 
   &__cards-tools {
-    margin-top: 15px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-around;
 
@@ -36,6 +35,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      text-align: center;
     }
   }
 
@@ -43,8 +43,11 @@
     display: flex !important;
     justify-content: space-around !important;
     border-top: 1px solid silver !important;
-    margin-top: 25px !important;
     border-bottom: 5px solid #1339b3 !important;
+
+    & Button{
+      flex-wrap: wrap;
+    }
   }
 }
 
@@ -64,9 +67,15 @@
 }
 
 .contentarea {
-  height: 260px !important;
+  min-height: 300px !important;
 }
 
 .cards__shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 1200px){
+  .txt{
+    margin-right: 5px;
+  }
 }

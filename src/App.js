@@ -15,10 +15,15 @@ class App extends Component {
     });
     console.log("Hello");
   };
+  closedHandler = () => {
+    this.setState({
+      showSidebar: false,
+    });
+  };
   render() {
     return (
       <div className="App">
-        <Sidebar open={this.state.showSidebar} />
+        <Sidebar open={this.state.showSidebar} closed={this.closedHandler} />
         <Home clicked={this.toggleHandler} />
       </div>
     );

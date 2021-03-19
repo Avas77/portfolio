@@ -1,6 +1,10 @@
 .about {
   margin-bottom: 150px;
 
+  @media only screen and (max-width: 992px) {
+    margin-bottom: 100px;
+  }
+
   &__heading {
     font-size: 2.5rem;
     text-transform: uppercase;
@@ -9,6 +13,10 @@
     display: inline;
     color: midnightblue;
     margin-left: 25px;
+
+    @media only screen and (max-width: 600px) {
+      margin-left: 17px;
+    }
   }
 
   &__description {
@@ -17,17 +25,28 @@
     font-weight: 500;
     line-height: 1.8rem;
     text-align: justify;
-    padding-right: 15px;
     margin-bottom: 75px;
     width: 95%;
     margin-right: auto;
     margin-left: auto;
+
+    @media only screen and (max-width: 666px) {
+      margin-bottom: 30px;
+    }
+    @media only screen and (max-width: 462px) {
+      font-size: 0.9rem;
+      word-spacing: 0px;
+    }
   }
 
   &__goals {
     display: flex;
     margin-bottom: 50px;
     margin-left: 25px;
+
+    @media only screen and (max-width: 666px) {
+      flex-direction: column;
+    }
   }
 
   &__btn {
@@ -60,6 +79,10 @@
   flex-direction: column;
   align-items: center;
   margin-right: 19px;
+
+  @media only screen and (max-width: 666px) {
+    margin-top: 65px;
+  }
 }
 
 .goals__items-icons {
@@ -107,8 +130,8 @@
   font-size: 1.5rem;
   font-weight: 500;
 
-  @media only screen and (max-width: 1300px) {
-    font-size: 1.4rem;
+  @media only screen and (max-width: 760px) {
+    font-size: 1.2rem;
   }
 }
 
@@ -127,6 +150,10 @@
 .details {
   &__items {
     display: flex !important;
+
+    @media only screen and (max-width: 600px) {
+      padding-top: 20px !important;
+    }
   }
 
   &__icon-box {
@@ -170,4 +197,27 @@
 .small {
   line-height: 1.4rem;
   font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .first-row,
+  .second-row,
+  .third-row {
+    justify-content: space-between !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .first-row,
+  .second-row,
+  .third-row {
+    padding: 0 16px !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .icon-esp {
+    width: 50px !important;
+    margin-right: 20px !important;
+  }
 }
