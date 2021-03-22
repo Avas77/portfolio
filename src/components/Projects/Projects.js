@@ -1,6 +1,5 @@
 import React from "react";
 import "./Projects.scss";
-import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
@@ -17,6 +16,7 @@ import story from "../../assets/story.png";
 import trillo from "../../assets/trillo.png";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
+import buddha from '../../assets/buddha1.png';
 
 const theme = createMuiTheme({
   props: {
@@ -241,17 +241,19 @@ const Projects = () => {
                   <Button
                     size="small"
                     color="primary"
-                    href="https://github.com/Avas77/weatherfinder"
+                    href=""
                     target="_blank"
                   >
                     <span className="txt">Source Code</span>
                     <span className="keys">&lt; &gt;</span>
                   </Button>
                   <Button
+                    className="not-allowed"
                     size="small"
                     color="primary"
-                    href="https://weatherfinder-73a44.web.app/"
+                    href=""
                     target="_blank"
+                    disabled
                   >
                     <span className="txt">Live Demo</span>
                     <span className="keys">&#8599;</span>
@@ -303,7 +305,7 @@ const Projects = () => {
                     <span className="txt">Source Code</span>
                     <span className="keys">&lt; &gt;</span>
                   </Button>
-                  <Button size="small" color="primary">
+                  <Button size="small" color="primary" disabled>
                     <span className="txt">Live Demo</span>
                     <span className="keys">&#8599;</span>
                   </Button>
@@ -355,7 +357,60 @@ const Projects = () => {
                     <span className="txt">Source Code</span>
                     <span className="keys">&lt; &gt;</span>
                   </Button>
-                  <Button size="small" color="primary">
+                  <Button className="not-allowed" size="small" color="primary" disabled>
+                    <span className="txt">Live Demo</span>
+                    <span className="keys">&#8599;</span>
+                  </Button>
+                </CardActions>
+              </Card>
+            </ThemeProvider>
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={4}>
+            <ThemeProvider theme={theme}>
+              <Card className="cards__shadow">
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    alt="Write short stories impress others"
+                    height="350"
+                    image={buddha}
+                    title="Short Stories Blog"
+                  />
+                  <CardContent className="contentarea">
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Travels and Tours website design
+                    </Typography>
+                    <Typography
+                      variant="body2"
+                      color="textSecondary"
+                      component="p"
+                      className="projects__cards-desc"
+                    >
+                      This is a simple UI design of a travel and tours website using 
+                      Figma. In this design, I have used attractive ways to show 
+                      different packages and overall design of the website. 
+                    </Typography>
+                    <div className="projects__cards-tools">
+                      <span>FontAwesome</span>
+                      <span className="extra">Figma</span>
+                      <span>Photoshop</span>
+                    </div>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions className="projects__btn">
+                  <Button
+                    size="small"
+                    color="primary"
+                    target="_blank"
+                    disabled
+                  >
+                    <span className="txt">Source Code</span>
+                    <span className="keys">&lt; &gt;</span>
+                  </Button>
+                  <Button className="not-allowed" size="small" color="primary"
+                  target="_blank"
+                  href="https://www.figma.com/proto/JRWeTwwBDyvEG0P18Ib2VG/Untitled?node-id=5%3A0&scaling=min-zoom">
                     <span className="txt">Live Demo</span>
                     <span className="keys">&#8599;</span>
                   </Button>

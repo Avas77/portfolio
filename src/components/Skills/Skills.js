@@ -12,10 +12,14 @@ import material from "../../assets/material.png";
 import bootstrap from "../../assets/bootstrap.png";
 import react from "../../assets/react.png";
 import firebase from "../../assets/firebase.png";
-import mysql from "../../assets/mysql.jpg";
+import mysql from "../../assets/mysql1.png";
 import postgresql from "../../assets/postgresql.png";
 import github from "../../assets/github.png";
 import netlify from "../../assets/netlify.png";
+import java from "../../assets/java.png";
+import django from "../../assets/django.jfif";
+import Photoshop from "../../assets/photoshop.png";
+import Zoom from "react-reveal/Zoom";
 
 const Skills = () => {
   return (
@@ -25,20 +29,40 @@ const Skills = () => {
         <h2 className="skills__box-heading">Programming Languages</h2>
         <div className="skills__cards">
           <div className="skills__items">
-            <img src={javascript} alt="" className="skills__image" />
-            <span className="skills__name">Javascript</span>
+            <Zoom>
+              <img src={javascript} alt="" className="skills__image" />
+              <span className="skills__name">Javascript</span>
+            </Zoom>
+          </div>
+
+          <div className="skills__items">
+            <Zoom>
+              <img src={cplus} alt="" className="skills__image" />
+              <span className="skills__name">C++</span>
+            </Zoom>
           </div>
           <div className="skills__items">
-            <img src={cplus} alt="" className="skills__image" />
-            <span className="skills__name">C++</span>
+            <Zoom>
+              {" "}
+              <img src={python} alt="" className="skills__image" />
+              <span className="skills__name">Python</span>
+            </Zoom>
           </div>
           <div className="skills__items">
-            <img src={python} alt="" className="skills__image" />
-            <span className="skills__name">Python</span>
+            <Zoom>
+              <img src={clogo} alt="" className="skills__image" />
+              <span className="skills__name">C</span>
+            </Zoom>
           </div>
           <div className="skills__items">
-            <img src={clogo} alt="" className="skills__image" />
-            <span className="skills__name">C</span>
+            <Zoom>
+              <img
+                src={java}
+                alt=""
+                style={{ height: "80px", width: "120px" }}
+              />
+              <span className="skills__name">Java</span>
+            </Zoom>
           </div>
         </div>
       </div>
@@ -47,12 +71,16 @@ const Skills = () => {
         <h2 className="skills__box-heading">HTML</h2>
         <div className="skills__cards">
           <div className="skills__items">
+            <Zoom>
             <img src={html} alt="" className="skills__image" />
             <span className="skills__name even">HTML 5</span>
+            </Zoom>
           </div>
           <div className="skills__items">
+            <Zoom>
             <img src={jsx} alt="" className="skills__image extend" />
             <span className="skills__name even">JSX</span>
+            </Zoom>
           </div>
         </div>
       </div>
@@ -61,20 +89,28 @@ const Skills = () => {
         <h2 className="skills__box-heading">CSS</h2>
         <div className="skills__cards">
           <div className="skills__items">
+            <Zoom>
             <img src={css} alt="" className="skills__image" />
             <span className="skills__name">CSS 3</span>
+            </Zoom>
           </div>
           <div className="skills__items">
+            <Zoom>
             <img src={sass} alt="" className="skills__image" />
             <span className="skills__name">Sass</span>
+            </Zoom>
           </div>
           <div className="skills__items">
+            <Zoom>
             <img src={material} alt="" className="skills__image" />
             <span className="skills__name">Material UI</span>
+            </Zoom>
           </div>
           <div className="skills__items">
+            <Zoom>
             <img src={bootstrap} alt="" className="skills__image circle" />
             <span className="skills__name">Bootstrap</span>
+            </Zoom>
           </div>
         </div>
       </div>
@@ -83,10 +119,13 @@ const Skills = () => {
         <h2 className="skills__box-heading">Javascript</h2>
         <div className="skills__cards">
           <div className="skills__items">
+            <Zoom>
             <img src={javascript} alt="" className="skills__image" />
             <span className="skills__name even">Javascript</span>
+            </Zoom>
           </div>
           <div className="skills__items">
+            <Zoom>
             <img
               src={react}
               alt=""
@@ -94,6 +133,7 @@ const Skills = () => {
               style={{ width: "100px" }}
             />
             <span className="skills__name even">React Js</span>
+            </Zoom>
           </div>
         </div>
       </div>
@@ -102,10 +142,29 @@ const Skills = () => {
         <h2 className="skills__box-heading">Backend</h2>
         <div className="skills__cards">
           <div className="skills__items">
+            <Zoom>
+            <img
+              src={django}
+              alt=""
+              style={{ height: "80px", width: "120px" }}
+            />
+            <span className="skills__name even">Django</span>
+            </Zoom>
+          </div>
+        </div>
+      </div>
+
+      <div className="skills__box">
+        <h2 className="skills__box-heading">Database</h2>
+        <div className="skills__cards">
+          <div className="skills__items">
+            <Zoom>
             <img src={firebase} alt="" className="skills__image" />
             <span className="skills__name">Firebase</span>
+            </Zoom>
           </div>
           <div className="skills__items">
+            <Zoom>
             <img
               src={mysql}
               alt=""
@@ -113,10 +172,13 @@ const Skills = () => {
               style={{ height: "80px", width: "130px" }}
             />
             <span className="skills__name">MySQL</span>
+            </Zoom>
           </div>
           <div className="skills__items">
+            <Zoom>
             <img src={postgresql} alt="" className="skills__image" />
             <span className="skills__name">Postgresql</span>
+            </Zoom>
           </div>
         </div>
       </div>
@@ -125,12 +187,27 @@ const Skills = () => {
         <h2 className="skills__box-heading">Others</h2>
         <div className="skills__cards">
           <div className="skills__items">
+            <Zoom>
             <img src={github} alt="" className="skills__image" />
             <span className="skills__name even">Github</span>
+            </Zoom>
           </div>
           <div className="skills__items">
+            <Zoom>
             <img src={netlify} alt="" className="skills__image" />
             <span className="skills__name even">Netlify</span>
+            </Zoom>
+          </div>
+          <div className="skills__items">
+            <Zoom>
+            <img
+              src={Photoshop}
+              alt=""
+              className="skills__image"
+              style={{ width: "130px" }}
+            />
+            <span className="skills__name even">Adobe Photoshop</span>
+            </Zoom>
           </div>
         </div>
       </div>

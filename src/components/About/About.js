@@ -148,7 +148,9 @@ const About = () => {
         </Grid>
       </Container>
       <div className="about__btn">
-        <Button variant="outlined" color="primary" className="btn__resume">
+        <Button variant="outlined" color="primary" className="btn__resume" 
+        target="_blank"
+        href="https://drive.google.com/file/d/1e3EzVYvMtcIp9626BjtkRO3EYD8L6YRY/view?usp=sharing">
           <VisibilityIcon className="btn__icon" />
           <span>See my resume</span>
         </Button>

@@ -72,6 +72,9 @@
   visibility: visible !important;
 }
 
+.is-current{
+  background-color: #091c57;
+}
 @media only screen and (max-width: 992px) {
   .Sidebar {
     transform: translateX(-100%);

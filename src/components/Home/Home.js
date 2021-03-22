@@ -11,11 +11,11 @@ import menu from "../../assets/menu.svg";
 
 const Home = (props) => {
   return (
-    <div className="content" id="home">
+    <section className="content">
       <span className="toggler" onClick={props.clicked}>
         <img src={menu} alt="" className="menu-icon" />
       </span>
-      <header className="home">
+      <header className="home" id ="home">
         <img src={program} alt="" className="home__image" />
         <div className="home__text">
           <div className="home__text-primary">
@@ -30,7 +30,7 @@ const Home = (props) => {
       <Skills />
       <Academic />
       <Contact />
-    </div>
+    </section>
   );
 };
 

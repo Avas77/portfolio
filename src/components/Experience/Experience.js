@@ -57,8 +57,10 @@ const Experience = () => {
                   variant="outlined"
                   color="primary"
                   className="timeline__btn"
+                  target="_blank"
+                  href="https://drive.google.com/file/d/1HPpRSmY4ZqaR21C4qDRoIdnhxt6-E4Yg/view?usp=sharing"
                 >
-                  <span>See my resume</span>
+                  <span>See certificate</span>
                 </Button>
               </TimelineContent>
             </TimelineItem>
@@ -100,6 +102,8 @@ const Experience = () => {
                   variant="outlined"
                   color="primary"
                   className="timeline__btn"
+                  target="_blank"
+                  href="https://drive.google.com/file/d/1e3EzVYvMtcIp9626BjtkRO3EYD8L6YRY/view?usp=sharing"
                 >
                   <span>See my resume</span>
                 </Button>
@@ -119,6 +123,15 @@ const Experience = () => {
                 Runner up, NCCS Hackathon, Sept 2020<br></br>
                 Participant, NCCS Hackathon, May 2019<br></br>
                 One Day Workshop on MERN, Jan 2019<br></br>
+                <Button
+                  variant="outlined"
+                  color="primary"
+                  className="timeline__btn"
+                  target="_blank"
+                  href="https://drive.google.com/file/d/1HRt6VYYYch-J7YoPDwTW0c-nG8lf1Ps4/view?usp=sharing"
+                >
+                  <span>See certificate</span>
+                </Button>
               </TimelineContent>
             </TimelineItem>
           </Timeline>

@@ -14,7 +14,7 @@
   &__box {
     border-radius: 5px;
     margin-top: 25px;
-    height: 225px;
+    min-height: 225px;
     font-size: 1rem;
     border-top: 1px solid #dee2e6;
     border-left: 1px solid #dee2e6;
@@ -40,15 +40,17 @@
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    flex-wrap: wrap;
   }
 
   &__items {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
 
     &:not(:last-child) {
-      margin-right: 90px;
+      margin-right: 70px;
     }
   }
 
@@ -81,4 +83,16 @@
 
 .circle {
   border-radius: 100px;
+}
+
+@media only screen and (max-width: 700px){
+  .skills__items:not(:last-child){
+    margin-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .skills__items{
+    margin-right: 20px !important;
+  }
 }

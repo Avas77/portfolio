@@ -34,7 +34,7 @@ const Sidebar = (props) => {
           </IconButton>
           <IconButton
             disableFocusRipple="true"
-            href="https://github.com/Avas77"
+            href="https://www.linkedin.com/in/avas-bajracharya-640357200/"
             target="_blank"
           >
             <LinkedInIcon className="icons__icon" />
@@ -57,31 +57,31 @@ const Sidebar = (props) => {
         <nav className="Links">
           <ul className="Links__list">
             <li className="Links__list-items">
-              <a href="#home" className="Links__item">
+              <a href="#home" className="Links__item" onClick={props.closed}>
                 <HomeIcon className="Links__icon" />
                 <span>Home</span>
               </a>
-              <a href="#about" className="Links__item">
+              <a href="#about" className="Links__item" onClick={props.closed}>
                 <AccountCircleIcon className="Links__icon" />
                 <span>About</span>
               </a>
-              <a href="#projects" className="Links__item">
+              <a href="#projects" className="Links__item" onClick={props.closed}>
                 <AccountTreeIcon className="Links__icon" />
                 <span>Projects</span>
               </a>
-              <a href="#experience" className="Links__item">
+              <a href="#experience" className="Links__item" onClick={props.closed}>
                 <ExploreIcon className="Links__icon" />
                 <span>Experience</span>
               </a>
-              <a href="#skills" className="Links__item">
+              <a href="#skills" className="Links__item" onClick={props.closed}>
                 <DoubleArrowIcon className="Links__icon" />
                 <span>Skills</span>
               </a>
-              <a href="#academic" className="Links__item">
+              <a href="#academic" className="Links__item" onClick={props.closed}>
                 <TimelineIcon className="Links__icon" />
                 <span>Academics</span>
               </a>
-              <a href="#contact" className="Links__item">
+              <a href="#contact" className="Links__item" onClick={props.closed}>
                 <ContactsIcon className="Links__icon" />
                 <span>Contact</span>
               </a>

@@ -120,3 +120,28 @@
   display: flex;
   align-items: center;
 }
+
+@media only screen and (max-width: 700px){
+  .animated-img{
+    display: none !important;
+  }
+  .contact__message{
+    justify-content: center;
+  }
+  .contact__column{
+    flex-wrap: nowrap !important;
+  }
+  .contact__info{
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact__infobox{
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 430px){
+  .contact__input, .contact__textarea, .contact__btn{
+    width: 250px !important;
+  }
+}
