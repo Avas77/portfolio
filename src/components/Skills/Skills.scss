@@ -67,7 +67,7 @@
     justify-content: center;
     align-items: center;
     font-size: 0.8rem;
-    margin-top: 10px;
+    margin-top: 15px;
   }
 }
 
@@ -85,14 +85,14 @@
   border-radius: 100px;
 }
 
-@media only screen and (max-width: 700px){
-  .skills__items:not(:last-child){
+@media only screen and (max-width: 700px) {
+  .skills__items:not(:last-child) {
     margin-right: 40px;
   }
 }
 
-@media only screen and (max-width: 500px){
-  .skills__items{
+@media only screen and (max-width: 500px) {
+  .skills__items {
     margin-right: 20px !important;
   }
 }

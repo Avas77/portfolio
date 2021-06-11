@@ -16,24 +16,35 @@ const Contact = () => {
   const [message, setMessage] = useState("");
 
   const setData = () => {
-    const data = {
-      name: name,
-      email: email,
-      message: message,
-    };
-    axios
-      .post("/info.json", data)
-      .then((response) => {
-        alert("Your message was delivered!!!");
-      })
-      .catch((error) => console.log(error));
+    if (name === "" || email === "" || message === "") {
+      alert("Please Fill the empty field");
+    } else {
+      const data = {
+        name: name,
+        email: email,
+        message: message,
+      };
+      axios
+        .post("/info.json", data)
+        .then((response) => {
+          alert("Your message was delivered!!!");
+        })
+        .catch((error) => console.log(error));
+    }
   };
 
   return (
     <div className="contact" id="contact">
       <h1 className="contact__heading">Contact</h1>
       <Grid container spacing={2} className="contact__message">
-        <Grid item xs={8} container direction="column" spacing={2} className="contact__column">
+        <Grid
+          item
+          xs={8}
+          container
+          direction="column"
+          spacing={2}
+          className="contact__column"
+        >
           <Grid item className="contact__header">
             Message me, nothing gives me more happiness than being able to
             connect with new people and helping each other.
@@ -77,8 +88,14 @@ const Contact = () => {
             </form>
           </Grid>
         </Grid>
-        <Grid item xs={4} container justify="center" alignItems="center" 
-        className="animated-img">
+        <Grid
+          item
+          xs={4}
+          container
+          justify="center"
+          alignItems="center"
+          className="animated-img"
+        >
           <img src={animate} alt="Hello image" className="contact__image" />
         </Grid>
       </Grid>
@@ -87,12 +104,19 @@ const Contact = () => {
           <SmartphoneIcon className="contact__icon" />
           <span>9803190991</span>
         </a>
-        <a className="contact__infobox" href="mailto:avasbajracharya9@gmail.com">
+        <a
+          className="contact__infobox"
+          href="mailto:avasbajracharya9@gmail.com"
+        >
           <EmailIcon className="contact__icon" />
           <span>avasbajracharya9@gmail.com</span>
         </a>
         <div className="contact__infobox">
-          <a href="https://www.facebook.com/avas.bajracharya" target="_blank" className="fb__link">
+          <a
+            href="https://www.facebook.com/avas.bajracharya"
+            target="_blank"
+            className="fb__link"
+          >
             <FacebookIcon className="contact__icon" />
             <span> Be friends in facebook</span>
           </a>

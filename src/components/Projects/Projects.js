@@ -16,7 +16,7 @@ import story from "../../assets/story.png";
 import trillo from "../../assets/trillo.png";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-import buddha from '../../assets/buddha1.png';
+import buddha from "../../assets/buddha1.png";
 
 const theme = createMuiTheme({
   props: {
@@ -128,7 +128,7 @@ const Projects = () => {
                   <Button
                     size="small"
                     color="primary"
-                    href="https://github.com/Avas77/example"
+                    href="https://github.com/Avas77/BurgerBuilder"
                     target="_blank"
                   >
                     <span className="txt">Source Code</span>
@@ -218,7 +218,7 @@ const Projects = () => {
                   />
                   <CardContent className="contentarea">
                     <Typography gutterBottom variant="h5" component="h2">
-                    Hotel Info Design
+                      Hotel Info Design
                     </Typography>
                     <Typography
                       variant="body2"
@@ -241,7 +241,7 @@ const Projects = () => {
                   <Button
                     size="small"
                     color="primary"
-                    href=""
+                    href="https://github.com/Avas77/Trillo"
                     target="_blank"
                   >
                     <span className="txt">Source Code</span>
@@ -357,7 +357,12 @@ const Projects = () => {
                     <span className="txt">Source Code</span>
                     <span className="keys">&lt; &gt;</span>
                   </Button>
-                  <Button className="not-allowed" size="small" color="primary" disabled>
+                  <Button
+                    className="not-allowed"
+                    size="small"
+                    color="primary"
+                    disabled
+                  >
                     <span className="txt">Live Demo</span>
                     <span className="keys">&#8599;</span>
                   </Button>
@@ -387,9 +392,10 @@ const Projects = () => {
                       component="p"
                       className="projects__cards-desc"
                     >
-                      This is a simple UI design of a travel and tours website using 
-                      Figma. In this design, I have used attractive ways to show 
-                      different packages and overall design of the website. 
+                      This is a simple UI design of a travel and tours website
+                      using Figma. In this design, I have used attractive ways
+                      to show different packages and overall design of the
+                      website.
                     </Typography>
                     <div className="projects__cards-tools">
                       <span>FontAwesome</span>
@@ -399,18 +405,17 @@ const Projects = () => {
                   </CardContent>
                 </CardActionArea>
                 <CardActions className="projects__btn">
-                  <Button
-                    size="small"
-                    color="primary"
-                    target="_blank"
-                    disabled
-                  >
+                  <Button size="small" color="primary" target="_blank" disabled>
                     <span className="txt">Source Code</span>
                     <span className="keys">&lt; &gt;</span>
                   </Button>
-                  <Button className="not-allowed" size="small" color="primary"
-                  target="_blank"
-                  href="https://www.figma.com/proto/JRWeTwwBDyvEG0P18Ib2VG/Untitled?node-id=5%3A0&scaling=min-zoom">
+                  <Button
+                    className="not-allowed"
+                    size="small"
+                    color="primary"
+                    target="_blank"
+                    href="https://www.figma.com/proto/JRWeTwwBDyvEG0P18Ib2VG/Untitled?node-id=5%3A0&scaling=min-zoom"
+                  >
                     <span className="txt">Live Demo</span>
                     <span className="keys">&#8599;</span>
                   </Button>

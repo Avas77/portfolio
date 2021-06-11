@@ -65,11 +65,19 @@ const Sidebar = (props) => {
                 <AccountCircleIcon className="Links__icon" />
                 <span>About</span>
               </a>
-              <a href="#projects" className="Links__item" onClick={props.closed}>
+              <a
+                href="#projects"
+                className="Links__item"
+                onClick={props.closed}
+              >
                 <AccountTreeIcon className="Links__icon" />
                 <span>Projects</span>
               </a>
-              <a href="#experience" className="Links__item" onClick={props.closed}>
+              <a
+                href="#experience"
+                className="Links__item"
+                onClick={props.closed}
+              >
                 <ExploreIcon className="Links__icon" />
                 <span>Experience</span>
               </a>
@@ -77,7 +85,11 @@ const Sidebar = (props) => {
                 <DoubleArrowIcon className="Links__icon" />
                 <span>Skills</span>
               </a>
-              <a href="#academic" className="Links__item" onClick={props.closed}>
+              <a
+                href="#academic"
+                className="Links__item"
+                onClick={props.closed}
+              >
                 <TimelineIcon className="Links__icon" />
                 <span>Academics</span>
               </a>
@@ -88,7 +100,9 @@ const Sidebar = (props) => {
             </li>
           </ul>
         </nav>
-        <div className="legal">&copy; 2020 Made by Avas Bajracharya</div>
+        <div className="legal">
+          &copy; {new Date().getFullYear()} Made by Avas Bajracharya
+        </div>
       </div>
     </Aux>
   );
