@@ -19,24 +19,24 @@ const About = () => {
     <section className="about" id="about">
       <h1 className="about__heading">About</h1>
       <p className="about__description">
-        I am currently in my final year studying
+        I have completed my Bachelors level Education at
+        <a href="http://nccs.edu.np/" className="link" target="_blank">
+          National College of Computer Studies(NCCS),
+        </a>
+        Paknajol, Kathmandu, studying
         <a
           href="https://cdcsit.edu.np/academics/?bsc-csit"
           className="link"
           target="_blank"
         >
-          Bachelors in Computer Science and Information Technology
+          Bachelors in Computer Science and Information Technology(BSc. CSIT).
         </a>
-        at
-        <a href="http://nccs.edu.np/" className="link" target="_blank">
-          National College of Computer Studies(NCCS),
-        </a>
-        Paknajol, Kathmandu. I prefer to keep learning, continue challenging
-        myself and do interesting things that matter. I like to surround myself
-        with people who are focused on their goals, execution towards those
-        goals, hardworking and always ready to help others in need. For me
-        helping the society, fullfilling my parent's dreams, being honest, fair,
-        and friendly with everyone are my top priorities. I don't like to define
+        I prefer to keep learning, continue challenging myself and do
+        interesting things that matter. I like to surround myself with people
+        who are focused on their goals, execution towards those goals,
+        hardworking and always ready to help others in need. For me helping the
+        society, fullfilling my parent's dreams, being honest, fair, and
+        friendly with everyone are my top priorities. I don't like to define
         myself as a smart and talented individual but rather I would like to
         define myself as a very hardworking and passionate person. I've worked
         on various small and and big projects while learning and practising. My

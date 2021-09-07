@@ -21,7 +21,7 @@
 
   &__description {
     margin-top: 20px;
-    word-spacing: 1px;
+    word-spacing: 0.8px;
     font-weight: 500;
     line-height: 1.8rem;
     text-align: justify;
@@ -68,10 +68,11 @@
   text-decoration: none;
   font-family: inherit;
   font-size: inherit;
-  margin: 0 5px;
+  margin: 0 8px;
   color: darkblue;
   font-weight: 900;
   opacity: 0.8;
+  word-spacing: 0 !important;
 }
 
 .goals__items {

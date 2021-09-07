@@ -119,7 +119,6 @@ const Experience = () => {
               <TimelineContent className="experience__content">
                 <span className="timeline__txt">
                   Treeleaf Technologies Pvt. Ltd, Software Engineer (FrontEnd)
-                  Trainee
                 </span>
                 <span className="timeline__dte">13th Mar, 2021 - Present</span>
                 <span className="timeline__subtext">
