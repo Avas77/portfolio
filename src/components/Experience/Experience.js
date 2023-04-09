@@ -23,94 +23,35 @@ const Experience = () => {
                 <TimelineConnector color="primary" />
               </TimelineSeparator>
               <TimelineContent className="experience__content">
-                <span className="timeline__txt">
-                  KTM Rush Pvt. Ltd, Web Designer Intern
-                </span>
-                <span className="timeline__dte">
-                  8th Nov, 2020 - 10th Jan, 2021
-                </span>
+                <span className="timeline__txt">Renegade Insurance (SDE1)</span>
+                <span className="timeline__dte">08/2021 - Present</span>
                 <span className="timeline__subtext">
                   <ul>
                     <li>
-                      Worked on a Single vender Ecommerce Food Delivery website
-                      which is used to order food through the website similar to
-                      Foodmandu, Bhojdeals etc.
+                      Worked on developing a dashboard application for insurance
+                      agents to keep track of all the leads and get quotes from
+                      different insurance carriers easily and instantly
                     </li>
                     <li>
-                      Developed Foodlist page, MyAccounts Page, OrderHistory
-                      page, Favourite Foods section page and many more.
-                    </li>
-                    <li>Fixed Minor bugs and design issues.</li>
-                    <li>
-                      Majorly worked with technologies like HTML, CSS,
-                      Javascript, Jquery, Bootstrap.
+                      Majorly used technologies include React, Chakra UI,
+                      Typescript, React Hook Forms, React Query, React Table,
+                      Redux Toolkit, Git Flow, Sentry, Storybook, Microsoft
+                      Azure
                     </li>
                     <li>
-                      Worked under the guidance of Mr. Anish Maharjan (Senior
-                      Web Designer of KTM Rush Pvt. Ltd)
+                      Previously, Insurance agents used the traditional method
+                      to store information about the leads in logbooks. With
+                      this application, all the information was digitized and
+                      stored online. This reduced the number of days it took to
+                      get quotes and compare quotes from different carriers to a
+                      couple of minutes
                     </li>
                   </ul>
                 </span>
-                <Button
-                  variant="outlined"
-                  color="primary"
-                  className="timeline__btn"
-                  target="_blank"
-                  href="https://drive.google.com/file/d/1HPpRSmY4ZqaR21C4qDRoIdnhxt6-E4Yg/view?usp=sharing"
-                >
-                  <span>See certificate</span>
-                </Button>
               </TimelineContent>
             </TimelineItem>
           </Timeline>
-
           <Timeline>
-            <TimelineItem>
-              <TimelineSeparator>
-                <TimelineDot variant="outlined" color="primary" />
-                <TimelineConnector color="primary" />
-              </TimelineSeparator>
-              <TimelineContent className="experience__content">
-                <span className="timeline__txt">
-                  KTM Rush Pvt. Ltd, Junior Web Designer
-                </span>
-                <span className="timeline__dte">
-                  11th Jan, 2021 - 12th Feb, 2021
-                </span>
-                <span className="timeline__subtext">
-                  <ul>
-                    <li>
-                      Worked on a Ecommerce website which displays attractive
-                      kid's toys and users can place an order to buy them.
-                    </li>
-                    <li>
-                      Developed a content management website for a Hospital
-                    </li>
-                    <li>
-                      Worked on Travel Package Booking website in which users
-                      book packages to travel anywhere in Nepal.
-                    </li>
-                    <li>
-                      Worked on React.js, HTML, CSS, Javascript, Bootstrap,
-                      Jquery, Figma, Anime.js etc.
-                    </li>
-                  </ul>
-                </span>
-                <Button
-                  variant="outlined"
-                  color="primary"
-                  className="timeline__btn"
-                  target="_blank"
-                  href="https://drive.google.com/file/d/1e3EzVYvMtcIp9626BjtkRO3EYD8L6YRY/view?usp=sharing"
-                >
-                  <span>See my resume</span>
-                </Button>
-              </TimelineContent>
-            </TimelineItem>
-          </Timeline>
-        </Grid>
-        <Grid item sm={12} md={6}>
-          <Timeline className="second-column">
             <TimelineItem>
               <TimelineSeparator>
                 <TimelineDot variant="outlined" color="primary" />
@@ -155,11 +96,103 @@ const Experience = () => {
                     </li>
                   </ul>
                 </span>
+                <Button
+                  variant="outlined"
+                  color="primary"
+                  className="timeline__btn"
+                  target="_blank"
+                  href="https://drive.google.com/file/d/186ZUBYvjKwYRaNOD6MfyTOKtYA1ECHqP/view"
+                >
+                  <span>See my Experience letter</span>
+                </Button>
+              </TimelineContent>
+            </TimelineItem>
+          </Timeline>
+        </Grid>
+        <Grid item sm={12} md={6}>
+          <Timeline className="second-column">
+            <TimelineItem>
+              <TimelineSeparator>
+                <TimelineDot variant="outlined" color="primary" />
+                <TimelineConnector color="primary" />
+              </TimelineSeparator>
+              <TimelineContent className="experience__content">
+                <span className="timeline__txt">
+                  KTM Rush Pvt. Ltd, Junior Web Designer
+                </span>
+                <span className="timeline__dte">
+                  11th Jan, 2021 - 12th Feb, 2021
+                </span>
+                <span className="timeline__subtext">
+                  <ul>
+                    <li>
+                      Worked on a Ecommerce website which displays attractive
+                      kid's toys and users can place an order to buy them.
+                    </li>
+                    <li>
+                      Developed a content management website for a Hospital
+                    </li>
+                    <li>
+                      Worked on Travel Package Booking website in which users
+                      book packages to travel anywhere in Nepal.
+                    </li>
+                    <li>
+                      Worked on React.js, HTML, CSS, Javascript, Bootstrap,
+                      Jquery, Figma, Anime.js etc.
+                    </li>
+                  </ul>
+                </span>
+                <Button
+                  variant="outlined"
+                  color="primary"
+                  className="timeline__btn"
+                  target="_blank"
+                  href="https://drive.google.com/file/d/1HPpRSmY4ZqaR21C4qDRoIdnhxt6-E4Yg/view"
+                >
+                  <span>See my Experience letter</span>
+                </Button>
               </TimelineContent>
             </TimelineItem>
           </Timeline>
 
           <h3 className="experience__subheading">Achievements</h3>
+          <Timeline className="second-">
+            <TimelineItem>
+              <TimelineSeparator>
+                <TimelineDot variant="outlined" color="primary" />
+                <TimelineConnector color="primary" />
+              </TimelineSeparator>
+              <TimelineContent className="achievements">
+                <a
+                  href="https://drive.google.com/file/d/1YqeYTxjbjaaNt5gOwhcYhSAhD02CyBPV/view"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Testing Javascript Course, August 2022
+                </a>
+                <br></br>
+                <a>Runner up, NCCS Hackathon, Sept 2020</a>
+                <br></br>
+                <a
+                  href="https://drive.google.com/file/d/180dC_YDuOrXD19net-EsQ5bql8FahDSE/view"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Participant, NCCS Hackathon, May 2019<br></br>
+                </a>
+                <a
+                  href="https://drive.google.com/file/d/1HRt6VYYYch-J7YoPDwTW0c-nG8lf1Ps4/view"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  One Day Workshop on MERN, Jan 2019
+                </a>
+                <br></br>
+              </TimelineContent>
+            </TimelineItem>
+          </Timeline>
+
+          <h3 className="experience__subheading">Popular Blogs</h3>
           <Timeline>
             <TimelineItem>
               <TimelineSeparator>
@@ -167,18 +200,16 @@ const Experience = () => {
                 <TimelineConnector color="primary" />
               </TimelineSeparator>
               <TimelineContent className="achievements">
-                Runner up, NCCS Hackathon, Sept 2020<br></br>
-                Participant, NCCS Hackathon, May 2019<br></br>
-                One Day Workshop on MERN, Jan 2019<br></br>
-                <Button
-                  variant="outlined"
-                  color="primary"
-                  className="timeline__btn"
+                <span className="timeline__txt">
+                  Dynamic Form using Schema-Based UI
+                </span>
+                <br></br>
+                <a
+                  href="https://dev.to/avas77/dynamic-form-using-schema-based-ui-22p0"
                   target="_blank"
-                  href="https://drive.google.com/file/d/1HRt6VYYYch-J7YoPDwTW0c-nG8lf1Ps4/view?usp=sharing"
                 >
-                  <span>See certificate</span>
-                </Button>
+                  See my blog
+                </a>
               </TimelineContent>
             </TimelineItem>
           </Timeline>

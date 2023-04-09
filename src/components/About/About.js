@@ -155,7 +155,7 @@ const About = () => {
           color="primary"
           className="btn__resume"
           target="_blank"
-          href="https://drive.google.com/file/d/1e3EzVYvMtcIp9626BjtkRO3EYD8L6YRY/view?usp=sharing"
+          href="https://drive.google.com/file/d/1qdiMY40EJXfyAZ74nDOWzGAKDatEQz2W/view"
         >
           <VisibilityIcon className="btn__icon" />
           <span>See my resume</span>

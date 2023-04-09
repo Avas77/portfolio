@@ -17,6 +17,7 @@ import trillo from "../../assets/trillo.png";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import buddha from "../../assets/buddha1.png";
+import expense from "../../assets/expense.png";
 
 const theme = createMuiTheme({
   props: {
@@ -34,6 +35,64 @@ const Projects = () => {
       <h1 className="projects__heading">Projects</h1>
       <Container maxWidth="lg">
         <Grid container spacing={2} className="projects__cards">
+          <Grid item xs={12} sm={6} md={4}>
+            <ThemeProvider theme={theme}>
+              <Card className="cards__shadow">
+                <CardActionArea disableRipple="true">
+                  <CardMedia
+                    component="img"
+                    alt="Covid-19 Tracker and Info app"
+                    height="350"
+                    image={expense}
+                    title="Fight Covid app"
+                  />
+                  <CardContent className="contentarea">
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Voice Powered Expense Tracker
+                    </Typography>
+                    <Typography
+                      variant="body2"
+                      color="textSecondary"
+                      component="p"
+                      className="projects__cards-desc"
+                    >
+                      Web Application that helps you keep track of your income
+                      and expenses to make sure you dont overspend your budget.
+                      It has the added functionality of adding incomes and
+                      expense data with your voice so you dont have to type
+                      every word.
+                    </Typography>
+                    <div className="projects__cards-tools">
+                      <span>React.Js</span>
+                      <span className="extra">Chakra UI</span>
+                      <span>Speechly</span>
+                    </div>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions className="projects__btn">
+                  <Button
+                    size="small"
+                    color="primary"
+                    href="https://github.com/Avas77/expense-tracker"
+                    target="_blank"
+                  >
+                    <span className="txt">Source Code</span>
+                    <span className="keys">&lt; &gt;</span>
+                  </Button>
+                  <Button
+                    size="small"
+                    color="primary"
+                    href="https://avas-expense-tracker-2022.netlify.app/"
+                    target="_blank"
+                  >
+                    <span className="txt">Live Demo</span>
+                    <span className="keys">&#8599;</span>
+                  </Button>
+                </CardActions>
+              </Card>
+            </ThemeProvider>
+          </Grid>
+
           <Grid item xs={12} sm={6} md={4}>
             <ThemeProvider theme={theme}>
               <Card className="cards__shadow">

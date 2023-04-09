@@ -42,7 +42,7 @@
   &__goals {
     display: flex;
     margin-bottom: 50px;
-    margin-left: 25px;
+    justify-content: center;
 
     @media only screen and (max-width: 666px) {
       flex-direction: column;
@@ -100,7 +100,7 @@
 .goals__items-icons::before {
   content: "";
   position: absolute;
-  top: -28.8675px;
+  top: -28px;
   left: 0;
   width: 0;
   height: 0;
@@ -112,7 +112,7 @@
 .goals__items-icons::after {
   content: "";
   position: absolute;
-  bottom: -28.8675px;
+  bottom: -28px;
   left: 0;
   width: 0;
   height: 0;

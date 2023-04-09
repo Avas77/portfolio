@@ -9,7 +9,6 @@ import jsx from "../../assets/jsx.jpg";
 import css from "../../assets/css.png";
 import sass from "../../assets/sass.png";
 import material from "../../assets/material.png";
-import bootstrap from "../../assets/bootstrap.png";
 import react from "../../assets/react.png";
 import firebase from "../../assets/firebase.png";
 import mysql from "../../assets/mysql1.png";
@@ -22,6 +21,10 @@ import Photoshop from "../../assets/photoshop.png";
 import Zoom from "react-reveal/Zoom";
 import ant from "../../assets/ant-design.png";
 import postman from "../../assets/postman.png";
+import Chakra from "../../assets/chakra-ui.png";
+import Mantine from "../../assets/mantine.png";
+import Next from "../../assets/next.png";
+import Docker from "../../assets/docker.png";
 
 const Skills = () => {
   return (
@@ -110,8 +113,14 @@ const Skills = () => {
           </div>
           <div className="skills__items">
             <Zoom>
-              <img src={bootstrap} alt="" className="skills__image circle" />
-              <span className="skills__name">Bootstrap</span>
+              <img src={Chakra} alt="" className="skills__image" />
+              <span className="skills__name">Chakra UI</span>
+            </Zoom>
+          </div>
+          <div className="skills__items">
+            <Zoom>
+              <img src={Mantine} alt="" className="skills__image circle" />
+              <span className="skills__name">Mantine UI</span>
             </Zoom>
           </div>
           <div className="skills__items">
@@ -141,6 +150,17 @@ const Skills = () => {
                 style={{ width: "100px" }}
               />
               <span className="skills__name even">React Js</span>
+            </Zoom>
+          </div>
+          <div className="skills__items">
+            <Zoom>
+              <img
+                src={Next}
+                alt=""
+                className="skills__image"
+                style={{ width: "100px" }}
+              />
+              <span className="skills__name even">Next.js</span>
             </Zoom>
           </div>
         </div>
@@ -198,6 +218,12 @@ const Skills = () => {
             <Zoom>
               <img src={github} alt="" className="skills__image" />
               <span className="skills__name even">Github</span>
+            </Zoom>
+          </div>
+          <div className="skills__items">
+            <Zoom>
+              <img src={Docker} alt="" className="skills__image" />
+              <span className="skills__name even">Docker</span>
             </Zoom>
           </div>
           <div className="skills__items">
